@@ -1,6 +1,6 @@
-require "rails/patch/json/encode/version"
+require "version"
 
-module Rails::Patch::Json::Encode
+module RailsPatchJsonEncode
   # Use multi_json instead of Rails' to_json method (which calls ActiveSupport::JSON)
   # when `render :json => @obj` is called.
   def self.patch_renderers
